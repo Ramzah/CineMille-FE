@@ -1,27 +1,23 @@
-# CinemilleFe
+# CineMille Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Questo progetto è stato sviluppato secondo le specifiche del **Coding Challenge** proposto da [Lascaux](https://www.lascaux.it).
 
-## Development server
+### Obiettivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Creare un’applicazione web per la gestione dei film di un multisala.  
+L’applicazione dovrà permettere la visualizzazione della lista dei film messi in programmazione in un cinema multisala, al fine di organizzare uno storico consultabile dai gestori.
 
-## Code scaffolding
+### Backend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+La parte **Backend** dell'applicazione si trova al seguente [link.](https://github.com/Ramzah/CineMille)
 
-## Build
+### Requisiti
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Node.js**  
+**Angular 15**
 
-## Running unit tests
+### Deploy
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+E' possibile clonare il repository e poi lanciare l'applicazione da terminale attraverso il comando `ng serve` oppure è possibile compilarla attraverso il comando `ng build`. Gli artefatti del progetto saranno salvati nella cartella `dist/`.  
+L'applicazione verrà lanciata sull'url `http://localhost:4200/`.  
+Per ulteriori informazioni è possibile consultare il seguente [link](https://www.theredcode.it/docker/come-distribuire-una-webapp-angular-in-produzione/).
