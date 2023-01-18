@@ -1,0 +1,21 @@
+.header {
+  background-color: black
+}
+
+.date-picker-container {
+  background-color: black;
+  justify-content: center;
+  display: flex
+}
+
+.date-picker-form {
+  margin-top: 20px
+}
+
+.date-picker-hint {
+  color: #d93748
+}
+
+.logo {
+  margin: 10px
+}

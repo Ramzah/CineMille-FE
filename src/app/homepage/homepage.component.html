@@ -1,0 +1,29 @@
+<!-- Header/Logo -->
+<div class="header">
+  <img class="logo" src="../assets/logo.png" />
+</div>
+
+<!-- Movie List -->
+<app-movielist></app-movielist>
+
+<!-- Datepicker -->
+<div class="date-picker-container">
+  <mat-form-field appearance="fill" class="date-picker-form">
+    <mat-label>Inserire un intervallo di date</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input
+        matStartDate
+        placeholder="Data inizio"
+        (dateChange)="onStartDate($event)"
+      />
+      <input
+        matEndDate
+        placeholder="Data fine"
+        (dateChange)="onEndDate($event)"
+      />
+    </mat-date-range-input>
+    <mat-hint class="date-picker-hint">MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
+</div>
