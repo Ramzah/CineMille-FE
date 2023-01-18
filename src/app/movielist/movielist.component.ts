@@ -38,7 +38,7 @@ export class MovielistComponent implements OnInit {
   /**
    * Effettuiamo una nuova chiamata al Backend per ricevere la lista dei film
    * contenuti nell'intervallo di date selezionato, come in ngOnInit().
-   * @param date L'intervallo di date selezionato, in formato dataInizio=DD/MM/YYYY&dataFine=DD/MM/YYYY
+   * @param date L'intervallo di date selezionato, in formato dataInizio=YYYY/MM/DD&dataFine=YYYY/MM/DD
    */
   updateMovies(date: string) {
     this.mService
