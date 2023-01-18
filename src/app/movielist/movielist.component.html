@@ -1,0 +1,101 @@
+<!-- Lista Card Film -->
+<!--
+  ngFor itera sulla lista di film già filtrata (i titoli sono univoci)
+  e mostra a schermo una serie di Card con titolo e copertina.
+  Le copertine sono associate al titolo tramite ngSwitch.
+  In un contesto di produzione sarebbe possibile estrarre le copertine associate al
+  film dal database oppure da una API esterna (evitando così di usare ngSwitchCase).
+-->
+<mat-card
+  class="movie-card"
+  *ngFor="let film of listafilmFiltered"
+  [ngSwitch]="film"
+>
+  <mat-card-header>
+    <mat-card-title>{{ film }}</mat-card-title>
+  </mat-card-header>
+  <img
+    *ngSwitchCase="'Il signore degli anelli - La compagnia dell\'anello'"
+    mat-card-image
+    src="../../assets/lotr1.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Il signore degli anelli - Le due torri'"
+    mat-card-image
+    src="../../assets/lotr2.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Il signore degli anelli - Il ritorno del re'"
+    mat-card-image
+    src="../../assets/lotr3.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Dune'"
+    mat-card-image
+    src="../../assets/dune.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Blade Runner'"
+    mat-card-image
+    src="../../assets/bladerunner.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Harry Potter e la pietra filosofale'"
+    mat-card-image
+    src="../../assets/harry1.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Harry Potter e la camera dei segreti'"
+    mat-card-image
+    src="../../assets/harry2.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Harry Potter e il calice di fuoco'"
+    mat-card-image
+    src="../../assets/harry4.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Star Wars: Episodio IV - Una nuova speranza'"
+    mat-card-image
+    src="../../assets/starwars1.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Star Wars: Episodio V - L\'Impero colpisce ancora'"
+    mat-card-image
+    src="../../assets/starwars2.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Star Wars: Episodio VI - Il ritorno dello Jedi'"
+    mat-card-image
+    src="../../assets/starwars3.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Matrix'"
+    mat-card-image
+    src="../../assets/matrix1.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Matrix Reloaded'"
+    mat-card-image
+    src="../../assets/matrix2.jpg"
+    alt="Movie Cover"
+  />
+  <img
+    *ngSwitchCase="'Matrix Revolutions'"
+    mat-card-image
+    src="../../assets/matrix3.jpg"
+    alt="Movie Cover"
+  />
+</mat-card>
